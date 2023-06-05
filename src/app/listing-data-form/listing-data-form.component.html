@@ -1,5 +1,5 @@
 <div class="content-box">
-   <form (ngSubmit)="onSubmit()">
+   <form (ngSubmit)="onButtonClicked()">
     <div>
       <label for="name">Name:
         <input
@@ -28,7 +28,7 @@
       </label>
     </div>
 
-    <button type="submit">Submit </button>
+    <button type="submit">{{buttonText}} </button>
   </form>
 
 
