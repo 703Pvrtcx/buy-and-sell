@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { fakeListings } from '../fake-data';
 import { Listing } from '../types';
-@Component({
-  selector: 'app-new-listing-page',
-  templateUrl: './new-listing-page.component.html',
-  styleUrls: ['./new-listing-page.component.css']
-})
-export class NewListingPageComponent implements OnInit {
 
+@Component({
+  selector: 'app-listing-data-form',
+  templateUrl: './listing-data-form.component.html',
+  styleUrls: ['./listing-data-form.component.css']
+})
+export class ListingDataFormComponent implements OnInit {
   name: string = '';
   description: string = '';
   price: string ='';
@@ -21,3 +21,4 @@ export class NewListingPageComponent implements OnInit {
     this.router.navigateByUrl('/my-listings');
   }
 }
+
